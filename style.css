@@ -8,6 +8,7 @@
 body
 {
    min-height: 1000px;
+   background: #060c21;
  
 }
 section
@@ -61,18 +62,6 @@ section .content p
     font-size: 1.2em;
 
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
-body
-{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: #060c21;
-	font-family: 'Poppins', sans-serif;
-}
 .container
 {
 	position: relative;
@@ -81,6 +70,11 @@ body
 	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 	grid-template-rows: auto;
 	grid-gap: 0 40px;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'poppins',sans-serif;
+	padding-left: 52px;
 }
 .container .box
 {
@@ -106,19 +100,23 @@ body
 }
 .container .box:nth-child(1):before
 {
-	background: linear-gradient(315deg,#ff0057,#e64a19);
+	background: linear-gradient(315deg,#ff0057, #e64a19);
+
 }
 .container .box:nth-child(2):before
 {
-	background: linear-gradient(315deg,#89ff00,#00bcd4)	
+	background: linear-gradient(315deg,#89ff00, #00bcd4);
+
 }
 .container .box:nth-child(3):before
 {
-	background: linear-gradient(315deg,#e91e63,#5d02ff)
+	background: linear-gradient(315deg,#e91e63, #5d02ff);
+
 }
 .container .box:nth-child(4):before
 {
-	background: linear-gradient(315deg,#ff0000,#ffc107)
+	background: linear-gradient(315deg,#ff0000, #ffc107);
+
 }
 .container .box:after
 {
@@ -139,13 +137,13 @@ body
 }
 .box .content1 h2
 {
-	position: absolute;
+	position: relative;
 	top: -60px;
 	right: 20px;
 	margin: 0;
 	padding: 0;
 	font-size: 10em;
-	color: rgba(255,255,255,.05);
+	color: rgba(255,255,255,0.05);
 	transition: 0.5s;
 }
 .box:hover .content1 h2
@@ -157,7 +155,6 @@ body
 	margin: 0 0 10px;
 	padding: 0;
 	font-size: 24px;
-	font-weight: 500;
 	color: #fff;
 }
 .box .content1 p
@@ -180,6 +177,7 @@ body
 	transform: translateY(-40px);
 	opacity: 0;
 	visibility: hidden;
+
 }
 .box:hover .content1 a
 {
@@ -191,5 +189,5 @@ body
 {
 	color: #000;
 	background: #fff;
+	
 }
-
