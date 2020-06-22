@@ -11,19 +11,7 @@ body
    background: #060c21;
  
 }
-/**
-body
-{
-	background-image: url('img2.jpg');
-	background-size: cover;
-	
-	background-repeat: no-repeat;
-	background-position: center center;
-	
-	
 
-}
-**/
 section
 {
     position: relative;
