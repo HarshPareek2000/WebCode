@@ -8,53 +8,33 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <div id="preogressbar"></div>
-    <div id="scrollpath"></div>
-    <div id="percent"></div>
-    <section2>
-    </section2>
-    <script type="text/javascript">
-        var percent = document.getElementById("preogressbar");
-        var percent = document.getElementById("percent");
-        
-        var totalHeight = document.body.scrollHeight - window.innerHeight;
-        window.onscroll = function()
-        {
-            var progress = (window.pageYOffset / totalHeight) * 100;
-            preogressbar.style.height = progress + "%";
-            percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%";
-        }
+    <section class="full_box">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
     
-    </script>
-    <section0>
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-    </label>
-   
-        
+        <div class="sidebar">
+            <header>WebCode</header>
+            <ul>
+                <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+                <li><a href="#"><i class="fas fa-stream"></i>Overwiew</a></li>
+                <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+                <li><a href="#"><i class="far fa-question-circle"></i>About Us</a></li>
+                <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+        </div>
     
-    <div class="sidebar">
-        <header>WebCode</header>
-        <ul>
-            <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-            <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
-            <li><a href="#"><i class="fas fa-stream"></i>Overwiew</a></li>
-            <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
-            <li><a href="#"><i class="far fa-question-circle"></i>About Us</a></li>
-            <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
-        </ul>
-    </div>
-</section0>
-    <section>
+    <section class="webcode">
         <div class="content">
             <h2>WebCode</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam corporis tempore eum veritatis commodi facilis nobis voluptate soluta nulla facere sit, nesciunt quod. Quibusdam autem, cupiditate voluptatibus dolores molestiae quis?</p>
         </div>
     </section>
-    <section1>
+</section>
     <div class="container">
         <div class="box">
             <div class="content1">
@@ -93,9 +73,19 @@
             </div>
         </div>
     </div>
-    </section1>
+    <div id="preogressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <script type="text/javascript">
+        var percent = document.getElementById("preogressbar");
+        var percent = document.getElementById("percent");
+        
+        var totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function()
+        {
+            var progress = (window.pageYOffset / totalHeight) * 100;
+            preogressbar.style.height = progress + "%";
+            percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%";
+        }
     
-
-
-</body>
-</html>
+    </script>

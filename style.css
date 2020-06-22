@@ -11,12 +11,14 @@ body
    background: #060c21;
  
 }
-body.section0
+body
 {
 	background-image: url('img2.jpg');
 	background-size: cover;
+	
 	background-repeat: no-repeat;
 	background-position: center center;
+	
 	
 
 }
@@ -226,8 +228,7 @@ section .content p
 	line-height: 65px;
 	font-size: 20px;
 	color: #fff;
-	padding-left: 
-	40px;
+	padding-left: 40px;
 	box-sizing: border-box;
 	border-top: 1px solid rgba(255,255,255,.1);
 	border-bottom: 1px solid black;
@@ -280,13 +281,13 @@ label #cancel
 }
 #check:checked ~ label #btn
 {
-	left: 250px;
+	left: 50px;
 	opacity: 0;
 	pointer-events: none;
 }
 #check:checked ~ label #cancel
 {
-	left: 195px;
+	left: 165px;
 }
 section0
 {
