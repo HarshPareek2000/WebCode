@@ -11,6 +11,7 @@ body
    background: #060c21;
  
 }
+/**
 body
 {
 	background-image: url('img2.jpg');
@@ -22,6 +23,7 @@ body
 	
 
 }
+**/
 section
 {
     position: relative;
